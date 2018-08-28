@@ -15,7 +15,7 @@ namespace MyShop.WebUI.Controllers
 
         public ProductCategoryManagerController(IRepsoitory<ProductCategory> context)
         {
-            context = new InMemoryRepsoitory<ProductCategory>();
+            this.context = context;
         }
         // GET: ProductManager
         public ActionResult Index()
